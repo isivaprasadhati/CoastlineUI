@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import('./coastline/coastline.module').then(m => m.CoastlineModule)
   },
   {
+    path: 'coastline-shop',
+    loadChildren: () => import('./coastlineshop/coastlineshop.module').then(m=>m.CoastlineshopModule)
+  },
+  {
     path: '',
     redirectTo: 'coastline',
     pathMatch: 'full'
